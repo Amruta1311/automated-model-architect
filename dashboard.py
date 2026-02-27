@@ -5,7 +5,7 @@ from deployment.api import run_search
 st.set_page_config(page_title="Automated Model Architect", layout="wide")
 
 st.title("🏆 Automated Model Architect")
-st.markdown("Neural Architecture Search Research Dashboard")
+st.markdown("Neural Architecture Search Research Dashboard - Results generated on the IRIS Dataset")
 
 # ---- SESSION STATE INIT ----
 if "history" not in st.session_state:
