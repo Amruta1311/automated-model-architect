@@ -1,5 +1,6 @@
 import yaml
 import torch
+import random  # needed for sampling
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from .architecture_generator import ArchitectureGenerator
@@ -42,6 +43,12 @@ class SearchEngine:
             train_config = {
                 "lr": 0.001,
                 "batch_size": 32,
+                "epochs": self.search_space["training"]["epochs"]
+            }
+            # Sample training hyperparameters from search space
+            train_config = {
+                "lr": random.choice(self.search_space["training"]["lr"]),
+                "batch_size": random.choice(self.search_space["training"]["batch_size"]),
                 "epochs": self.search_space["training"]["epochs"]
             }
 
