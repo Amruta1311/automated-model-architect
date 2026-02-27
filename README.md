@@ -19,10 +19,15 @@ By providing modular components under core, configs, and deployment, this repo m
 🧱 Project Structure
 /
 ├── configs/             # Config templates for experiments
+
 ├── core/                # Core model logic & training utilities
+
 ├── deployment/          # Deployment scripts & Docker/infra
+
 ├── dashboard.py         # Optional UI / monitoring frontend
+
 └── requirements.txt     # Python dependencies
+
 🛠️ Features
 
 Model Architecture Templates — Scalable architecture blueprints
