@@ -1,0 +1,25 @@
+layers:
+  # More variation in number of layers
+  num_layers: [2, 3, 4, 5, 6]
+
+  # Wider hidden units variation
+  hidden_units: [32, 64, 128, 256, 512]
+
+  # More activations
+  activation: ["relu", "tanh", "leaky_relu", "elu"]
+
+  # Wider dropout variation
+  dropout: [0.0, 0.1, 0.2, 0.3, 0.4]
+
+training:
+  # Wider learning rate exploration
+  lr: [0.0001, 0.0005, 0.001, 0.005]
+
+  # Include small and large batch sizes
+  batch_size: [16, 32, 64, 128]
+
+  # Slightly more epochs to see convergence
+  epochs: 15
+
+regularization:
+  weight_decay: [0.0, 0.0001, 0.0005]
